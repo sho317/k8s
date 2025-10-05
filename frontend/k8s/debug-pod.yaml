@@ -1,0 +1,11 @@
+# debug-pod.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: debug
+spec:
+  containers:
+  - name: debug
+    image: nicolaka/netshoot
+    command: ["sleep", "3600"]
+
